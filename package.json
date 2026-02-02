@@ -1,0 +1,29 @@
+{
+  "name": "yondu-exam",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "type": "module",
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "check-types": "turbo check-types",
+    "dev:native": "turbo -F native dev",
+    "dev:web": "turbo -F web dev",
+    "dev:server": "turbo -F server dev"
+  },
+  "dependencies": {
+    "@yondu-exam/env": "*",
+    "dotenv": "^17.2.2",
+    "zod": "^4.1.13"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.14",
+    "@yondu-exam/config": "*",
+    "turbo": "^2.6.3",
+    "typescript": "^5"
+  },
+  "packageManager": "npm@11.8.0"
+}

@@ -1,0 +1,3 @@
+{
+  "extends": "@yondu-exam/config/tsconfig.base.json"
+}
