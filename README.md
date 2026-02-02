@@ -48,7 +48,7 @@ npm run dev
 
 This will start both the frontend and backend concurrently using Turbo.
 
-- Frontend will be available at: `http://localhost:5173` (or your configured Vite port)
+- Frontend will be available at: `http://localhost:3001` (or your configured Vite port)
 - Backend API will be available at: `http://localhost:3000` (or your configured port)
 
 ---
