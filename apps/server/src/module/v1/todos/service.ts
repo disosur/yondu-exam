@@ -10,7 +10,7 @@ export class TodoService {
 
   async createTodo(text: string, category: TodoCategory): Promise<Todo> {
     const todo: Todo = {
-      id: Date.now().toString(),
+      id: crypto.randomUUID(),
       text,
       completed: false,
       category,

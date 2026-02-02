@@ -12,7 +12,11 @@
     "check-types": "turbo check-types",
     "dev:native": "turbo -F native dev",
     "dev:web": "turbo -F web dev",
-    "dev:server": "turbo -F server dev"
+    "dev:server": "turbo -F server dev",
+    "test": "turbo test",
+    "test:watch": "turbo test:watch",
+    "test:coverage": "turbo test:coverage",
+    "test:server": "turbo -F server test"
   },
   "dependencies": {
     "@yondu-exam/env": "*",

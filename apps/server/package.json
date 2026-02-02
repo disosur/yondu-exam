@@ -7,7 +7,10 @@
     "check-types": "tsc -b",
     "compile": "bun build --compile --minify --sourcemap --bytecode ./src/index.ts --outfile server",
     "dev": "tsx watch src/index.ts",
-    "start": "node dist/index.mjs"
+    "start": "node dist/index.mjs",
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest",
+    "test:watch": "NODE_OPTIONS=--experimental-vm-modules jest --watch",
+    "test:coverage": "NODE_OPTIONS=--experimental-vm-modules jest --coverage"
   },
   "dependencies": {
     "@yondu-exam/env": "*",
@@ -19,8 +22,11 @@
   "devDependencies": {
     "@types/cors": "^2.8.17",
     "@types/express": "^5.0.1",
+    "@types/jest": "^29.5.14",
     "@types/node": "^22.13.14",
     "@yondu-exam/config": "*",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.5",
     "tsdown": "^0.16.5",
     "tsx": "^4.19.2",
     "typescript": "^5"
